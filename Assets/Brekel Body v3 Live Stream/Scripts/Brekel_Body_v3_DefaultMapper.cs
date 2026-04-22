@@ -34,6 +34,12 @@ public class Brekel_Body_v3_DefaultMapper : MonoBehaviour
     public int  body_ID            = 0;
     [Tooltip("Apply positions to all joints. When OFF only the root moves (reduces foot sliding)")]
     public bool applyPositionsToAll = true;
+    [Tooltip("Seconds of no incoming data before the character is hidden")]
+    public float NoDataHideDelay = 2f;
+    [Tooltip("Smoothing speed for joint positions (Lerp). 0 = no smoothing, higher = snappier")]
+    public float positionSmoothing = 0f;
+    [Tooltip("Smoothing speed for joint rotations (Slerp). 0 = no smoothing, higher = snappier")]
+    public float rotationSmoothing = 0f;
 
     [Header("Body Joints")]
     [Tooltip("Assign the matching bone Transforms from your character rig, or use Auto-Find")]
@@ -87,7 +93,6 @@ public class Brekel_Body_v3_DefaultMapper : MonoBehaviour
     private float _lastDataTimestamp  = float.MinValue;
     private float _noDataTimer        = 0f;
     private bool  _characterVisible   = true;
-    private const float NoDataHideDelay = 2f;
 
     /// <summary>
     /// Returns the inverse bind-pose rotation for the given joint index.
