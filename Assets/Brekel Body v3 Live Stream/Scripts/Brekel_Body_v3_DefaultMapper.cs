@@ -258,9 +258,17 @@ public class Brekel_Body_v3_DefaultMapper : MonoBehaviour
     {
         if (t == null) return;
         int idx = (int)joint;
+        Quaternion targetRot = _offsets[idx] * body.joints[idx].rotation;
         if (applyPos)
-            t.localPosition = body.joints[idx].position;
-        t.localRotation = _offsets[idx] * body.joints[idx].rotation;
+        {
+            Vector3 targetPos = body.joints[idx].position;
+            t.localPosition = positionSmoothing > 0f
+                ? Vector3.Lerp(t.localPosition, targetPos, positionSmoothing * Time.deltaTime)
+                : targetPos;
+        }
+        t.localRotation = rotationSmoothing > 0f
+            ? Quaternion.Slerp(t.localRotation, targetRot, rotationSmoothing * Time.deltaTime)
+            : targetRot;
     }
 
     private void ApplyBlendshapes(BrekelBodyFrame body)
