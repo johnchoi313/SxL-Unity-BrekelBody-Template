@@ -230,12 +230,18 @@ public class Brekel_Body_v3_DefaultMapper : MonoBehaviour
         Debug.Log($"[DefaultMapper] Auto-Find: {found}/{total} joints found in '{character.name}'.");
     }
 
-    /// <summary>Searches only within root's hierarchy. Returns null if not found.</summary>
+    /// <summary>
+    /// Searches root itself and its entire hierarchy. Returns null if not found.
+    /// root (the character object) is checked explicitly first before descending into children.
+    /// </summary>
     private static Transform Find(string[] names, Transform root, ref int found)
     {
         foreach (string n in names)
+        {
+            if (root.name == n) { found++; return root; }
             foreach (Transform t in root.GetComponentsInChildren<Transform>(true))
                 if (t.name == n) { found++; return t; }
+        }
         return null;
     }
 
@@ -327,6 +333,6 @@ public class Brekel_Body_v3_DefaultMapper : MonoBehaviour
     {
         if (_characterVisible == visible) return;
         _characterVisible = visible;
-        if (character != null) character.SetActive(visible);
+        if (hips != null) hips.gameObject.SetActive(visible);
     }
 }

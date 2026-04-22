@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 4168233966130000873}
+  character: {fileID: 6849398775503355551}
   body_ID: 0
   applyPositionsToAll: 1
   hips: {fileID: 8846385760114268113}
@@ -1567,7 +1567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8846385760114268113}
   m_Layer: 0
-  m_Name: Body1:Hips P1
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2625,7 +2625,7 @@ GameObject:
   - component: {fileID: 761956072500386320}
   - component: {fileID: 4158498215671809729}
   m_Layer: 0
-  m_Name: '[Brekel_Body_v3_TCP] Player'
+  m_Name: '[Brekel_Body_v3_TCP] Players'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

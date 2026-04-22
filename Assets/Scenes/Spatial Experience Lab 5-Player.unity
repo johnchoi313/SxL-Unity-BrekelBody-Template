@@ -229,21 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
 --- !u!1 &344743097
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 7643752615821411981}
+  character: {fileID: 919132148714540027}
   body_ID: 3
   applyPositionsToAll: 1
   hips: {fileID: 2956673417160794805}
@@ -386,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 7643752614193359810}
+  character: {fileID: 919132148127983284}
   body_ID: 1
   applyPositionsToAll: 1
   hips: {fileID: 2956673416540671994}
@@ -423,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 7643752614093274435}
+  character: {fileID: 919132148026585141}
   body_ID: 2
   applyPositionsToAll: 1
   hips: {fileID: 2956673416506382715}
@@ -460,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 7643752614675746314}
+  character: {fileID: 919132147569918844}
   body_ID: 4
   applyPositionsToAll: 1
   hips: {fileID: 2956673416024566322}
@@ -497,7 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiver: {fileID: 4158498215671809729}
-  character: {fileID: 4168233966130000873}
+  character: {fileID: 6849398775503355551}
   body_ID: 0
   applyPositionsToAll: 1
   hips: {fileID: 8846385760114268113}
@@ -6590,7 +6575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8846385760114268113}
   m_Layer: 0
-  m_Name: Body1:Hips P1
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11409,7 +11394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956673416506382715}
   m_Layer: 0
-  m_Name: Body1:Hips P3
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11425,7 +11410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956673416540671994}
   m_Layer: 0
-  m_Name: Body1:Hips P2
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11441,7 +11426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956673416024566322}
   m_Layer: 0
-  m_Name: Body1:Hips P5
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11457,7 +11442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956673417160794805}
   m_Layer: 0
-  m_Name: Body1:Hips P4
+  m_Name: Body1:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12072,7 +12057,7 @@ GameObject:
   - component: {fileID: 761956072500386320}
   - component: {fileID: 4158498215671809729}
   m_Layer: 0
-  m_Name: '[Brekel_Body_v3_TCP] Player'
+  m_Name: '[Brekel_Body_v3_TCP] Players'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
